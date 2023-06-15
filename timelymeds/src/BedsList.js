@@ -61,7 +61,7 @@ function BedCard(props) {
         <div className="flex-grow-1 d-flex flex-column">
           <div
             style={{ color: 'lightblue' }}
-            className="h2 flex-grow-1 d-flex align-items-center justify-content-center"
+            className="clickable h2 flex-grow-1 d-flex align-items-center justify-content-center"
             onClick={handleClick}
           >
             (click to view)
