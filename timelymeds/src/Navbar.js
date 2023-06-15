@@ -22,6 +22,35 @@ function Nav() {
   useEffect(() => {
     if (!initialRender && passedPills.length > 0) {
       console.log('Passed Pills:', passedPills);
+
+      let pass_str = ''
+
+      passedPills.forEach((pill) => {
+        if (pill.slot === '1') {
+          pass_str += 'a';
+        }
+        if (pill.slot === '2') {
+          pass_str += 'b';
+        }
+        if (pill.slot === '3') {
+          pass_str += 'c';
+        }
+        if (pill.slot === '4') {
+          pass_str += 'd';
+        }
+      });
+
+      console.log(pass_str);
+
+      fetch('http://esp8266.local/dispense', {
+        method: "POST",
+        body: pass_str
+      }).then(function(response) {
+        return response.text();
+      }).then(function(data) {
+        console.log(data);
+      });
+      
     } else {
       setInitialRender(false);
     }

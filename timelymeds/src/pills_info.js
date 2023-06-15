@@ -13,7 +13,7 @@ const pills_info = {
     '3': {
       'name': 'Calpol',
       'stock_left': 2,
-      'timings': '12:00, 17:00, 22:00'
+      'timings': '12:00, 17:00, 23:00'
     },
     '4': {
       'name': 'Panadol',
