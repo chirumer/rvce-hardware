@@ -11,13 +11,13 @@ function Nav() {
             <img
               alt=""
               src="/logo.png"
-              width="30"
-              height="30"
+              width="36"
+              height="36"
               className="d-inline-block align-top"
               style={{marginRight: "4px"}}
             />{' '}
-  
-              <h1 class="m-0" style={{display: "inline-block", fontSize: "30px"}}>TimelyMeds</h1>
+            
+            <h1 class="m-0" style={{display: "inline-block", fontSize: "30px"}}>TimelyMeds</h1>
 
           </Navbar.Brand>
         </Container>
