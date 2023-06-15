@@ -2,27 +2,38 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 function BedCard(props) {
+  const handleClick = () => {
+    // Access the id prop when the div is clicked
+    alert(props.id);
+    console.log('Clicked id:', props.id);
+  };
+
   return (
     <Card className="shadow d-flex flex-row">
       <div className="d-flex m-2 flex-column align-items-center">
-        <img
-          src="/bed.png"
-          alt="bed"
-          width="60"
-          height="60"
-        />
-        <div className="h2 text-center m-2" style={{color: "#89CFF0"}}>
+        <img src="/bed.png" alt="bed" width="60" height="60" />
+        <div className="h2 text-center m-2" style={{ color: '#89CFF0' }}>
           {props.name}
         </div>
       </div>
 
       <div className="flex-grow-1 d-flex flex-column">
-        <div style={{color: "lightblue"}} className="h2 flex-grow-1 d-flex align-items-center justify-content-center">
+        <div
+          style={{ color: 'lightblue' }}
+          className="h2 flex-grow-1 d-flex align-items-center justify-content-center"
+          onClick={handleClick}
+        >
           (click to view)
         </div>
 
         <div className="text-center">
-          <span style={props.status === "online" ? { color: "##80FF00" } : { color: "#FF0000" }}>
+          <span
+            style={
+              props.status === 'online'
+                ? { color: '#48A040' }
+                : { color: '#FF0000' }
+            }
+          >
             status: {props.status}
           </span>
         </div>
