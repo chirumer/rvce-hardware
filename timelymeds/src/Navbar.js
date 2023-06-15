@@ -14,10 +14,10 @@ function Nav() {
               width="30"
               height="30"
               className="d-inline-block align-top"
-              style={{marginRight: "10px"}}
+              style={{marginRight: "4px"}}
             />{' '}
   
-              <h1 style={{display: "inline-block", fontSize: "30px"}}>TimelyMeds</h1>
+              <h1 class="m-0" style={{display: "inline-block", fontSize: "30px"}}>TimelyMeds</h1>
 
           </Navbar.Brand>
         </Container>
