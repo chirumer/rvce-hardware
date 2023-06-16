@@ -1,7 +1,9 @@
 # Timely Meds
 
 ## Problem statement:
-#### It's very confusion when you have a lot of medications to take at different time. If you are a patient administered in a hospital or in an old age home. 
+#### It's very confusing when you have a lot of medications to take at different times. If you are a patient administered in a hospital or in an old age home.
+
+#### Old age people often forget taking their medication which leads to worsening of their condition, espicially if they have a degeneratiove disease/disorder.
 
 #### The caretakers/nurses may give the incorrect medication to the incorrect patient or at the incorrect time. Our solution aims to solve this issue.
 
