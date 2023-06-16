@@ -1,4 +1,4 @@
-Timely Meds
+# Timely Meds
 
 ## Problem statement:
 #### It's very confusion when you have a lot of medications to take at different time. If you are a patient administered in a hospital or in an old age home. 
