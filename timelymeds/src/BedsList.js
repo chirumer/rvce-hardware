@@ -89,9 +89,10 @@ function BedCard(props) {
           {pillInfo && (
             <ul>
               {Object.entries(pillInfo).map(([slot, data]) => (
-                <li key={slot}>
+                <div key={slot}>
+                  <br></br>
                   <h3>Slot {slot}:</h3>
-                  <div>
+                  <div style={{marginBottom: 1 + 'em'}}>
                     Pill Name:{' '}
                     <input
                       type="text"
@@ -101,7 +102,7 @@ function BedCard(props) {
                       }
                     />
                   </div>
-                  <div>
+                  <div style={{marginBottom: 1 + 'em'}}>
                     Stock Left:{' '}
                     <input
                       type="number"
@@ -111,7 +112,7 @@ function BedCard(props) {
                       }
                     />
                   </div>
-                  <div>
+                  <div style={{marginBottom: 1 + 'em'}}>
                     Timings:{' '}
                     <input
                       type="text"
@@ -121,7 +122,7 @@ function BedCard(props) {
                       }
                     />
                   </div>
-                </li>
+                </div>
               ))}
             </ul>
           )}
